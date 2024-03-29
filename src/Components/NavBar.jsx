@@ -7,10 +7,13 @@ const NavBar = () => {
 
 return (
 <>
+<header id="header_hub_cinema">
+  <img src="" alt="logo_hub_cinema"/>
+  </header>
 
-<Nav class="navbar navbar-expand-lg bg-body-tertiary m-5 px-3 rounded-pill col-11 ">
+<Nav class="navbar navbar-expand-lg bg-body-tertiary px-3 rounded-pill col-11 " id="navbar_block">
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/home">Accueil</a>
@@ -29,8 +32,8 @@ return (
           </ul>
         </li>
       </ul>
-      <Form class="d-flex col-sm-10" role="search">
-        <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search"></input>
+      <Form id="search_block" role="search">
+        <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search" id="input_search_bar"></input>
         <Button class="btn btn-outline-success" type="submit">Search</Button>
       </Form>
     </div>
