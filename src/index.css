@@ -17,7 +17,6 @@ code {
   flex-direction: row;
   justify-content: center;
   background-color: black;
-  padding: 25px;
 }
 
 #navbar_block{
@@ -30,4 +29,19 @@ code {
 
 #input_search_bar{
   width:1000px;
+}
+
+#search_button{
+  background-color: rgb(48, 27, 63);
+  border: none;
+}
+
+#search_button:hover{
+  width: 75px;
+}
+
+#input_search_bar:focus{
+  outline: 7px ridge rgba(48, 27, 63, .6);
+  border-radius: 2rem;
+
 }
