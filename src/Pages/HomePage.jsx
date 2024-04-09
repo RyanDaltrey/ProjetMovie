@@ -7,9 +7,9 @@ import homeService from "../Services/homeService";
 const HomePage = () =>{
   const [movies, setMovies] =useState([]);
 
-  const fetchMovies = async () => {
+  const fetchPopular = async () => {
     try {
-      const response = await homeService.getMovies();
+      const response = await homeService.getPopular();
       console.log(response);
       setMovies(response.data.results)
     } catch (e) {
@@ -18,15 +18,16 @@ const HomePage = () =>{
   }
 
   useEffect (() => {
-    fetchMovies()
+    fetchPopular()
   },[]);
 
 
     return<>
-    
+    <div id="film_card">
   {movies.map(m =>{
     return <FilmsCard film={m}/>
   })}
+  </div>
     </>
 }
 
