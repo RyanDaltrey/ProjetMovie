@@ -20,7 +20,9 @@ code {
 }
 
 #navbar_block{
-  margin: 0px 50px
+  margin: 0px 50px;
+  padding-top: 10px;
+  padding-bottom: 10px !important;
 }
 
 #search_block{
@@ -44,4 +46,12 @@ code {
   outline: 7px ridge rgba(48, 27, 63, .6);
   border-radius: 2rem;
 
+}
+
+#film_card{
+  margin: 15px;
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
