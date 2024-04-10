@@ -23,7 +23,7 @@ code {
   margin: 5px 50px;
   padding-top: 10px;
   padding-bottom: 10px !important;
-  background-color: rgba(48, 27, 63, .1) !important ;
+  background-color: rgba(48, 27, 63, .4) !important ;
 }
 
 #search_block{
@@ -37,16 +37,22 @@ code {
 #search_button{
   background-color: rgb(48, 27, 63);
   border: none;
+  color: white;
 }
 
 #search_button:hover{
-  width: 75px;
+  width: 110px;
 }
 
 #input_search_bar:focus{
   outline: 7px ridge rgba(48, 27, 63, .6);
   border-radius: 2rem;
 
+}
+
+#titre_navbar{
+  color: white;
+  font-size:25px;
 }
 
 
@@ -70,5 +76,18 @@ code {
 
 .details_button:hover{
   cursor: pointer;
+}
+
+#film_slide{
+  display: grid;
+ grid-template-columns: repeat(3, 100%);
+ overflow: hidden;
+ scroll-behavior: smooth;
+
+ width: 100%;
+ position: relative;
+ display: grid;
+ grid-template-columns: repeat(4, auto);
+ margin: 20px 0;
 }
 

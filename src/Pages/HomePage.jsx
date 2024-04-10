@@ -21,14 +21,24 @@ const HomePage = () =>{
     fetchPopular()
   },[]);
 
+//   var React = require('react');
+//   var ReactDOM = require('react-dom');
+//   var Carousel = require('react-responsive-carousel').Carousel;
 
-    return<>
-    <div id="film_card">
-  {movies.map(m =>{
-    return <FilmsCard film={m}/>
-  })}
-  </div>
-    </>
+//   var DemoCarousel = React.createClass({
+//     render() {
+//         return (
+//             <Carousel showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
+//               <div id="film_card">
+//                 {movies.map(m =>{
+//                     return <FilmsCard film={m}/>
+//                 })}
+//                 </div>
+//             </Carousel>
+//         );
+//     }
+// });
+// ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
 }
 
 export default HomePage;
