@@ -97,3 +97,10 @@ code {
  margin: 20px 0;
 }
 
+#carousel_popular_film{
+  margin: 50px;
+}
+
+.titre_des_carousel{
+  margin-left: 40px;
+}

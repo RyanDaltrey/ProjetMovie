@@ -18,6 +18,8 @@ const HomePage = () =>{
     }
   }
 
+  const displayCount = 5;
+  
   // const onChange=() => {
 
   // }
@@ -28,13 +30,34 @@ const HomePage = () =>{
 
 
     return (
-            <Carousel showArrows={true} >
-              {/* <div id="film_card"> */}
-                {movies.map(m =>{
-                    return <FilmsCard film={m}/>
-                })}
-                {/* </div> */}
-            </Carousel>
+            <>
+            <h3 className="titre_des_carousel">Les Populaires</h3>
+            <Carousel showArrows={true} centerMode centerSlidePercentage={100 / displayCount} id="carousel_popular_film">
+        {/* <div id="film_card"> */}
+        {movies.map(m => {
+          return <FilmsCard film={m} />;
+        })}
+        {/* </div> */}
+      </Carousel>
+      <h3 className="titre_des_carousel">Les Nouveautés</h3>
+      <Carousel showArrows={true} centerMode centerSlidePercentage={100 / displayCount} id="carousel_popular_film">
+          {/* <div id="film_card"> */}
+          {movies.map(m => {
+            return <FilmsCard film={m} />;
+          })}
+          {/* </div> */}
+        </Carousel>
+        <h3 className="titre_des_carousel">Meilleurs Notés</h3>
+        <Carousel showArrows={true} centerMode centerSlidePercentage={100 / displayCount} id="carousel_popular_film">
+          {/* <div id="film_card"> */}
+          {movies.map(m => {
+            return <FilmsCard film={m} />;
+          })}
+          {/* </div> */}
+        </Carousel>
+
+
+          </>
         );
 
 }
