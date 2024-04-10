@@ -16,7 +16,7 @@ function NavScrollExample() {
 
     <Navbar expand="lg" className="bg-body-tertiary px-3 rounded-pill col-11" id="navbar_block">
       <Container fluid>
-        <Navbar.Brand href="#" id="titre_navbar">Hub Cinéma</Navbar.Brand>
+        <Navbar.Brand href="/home" id="titre_navbar">Hub Cinéma</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -24,28 +24,28 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Accueil</Nav.Link>
-            <Nav.Link href="#action2">Films</Nav.Link>
-            <NavDropdown title="Catégories" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Aventure</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Anime</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Comédie</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Crime</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Documentaire</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Drama</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Famille</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Fantasie</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Histoire</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Horror</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Musical</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Mystere</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Romance</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Science Fiction</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Film TV</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Thiller</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Guerre</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Western</NavDropdown.Item>
+            <Nav.Link href="/home">Accueil</Nav.Link>
+            <Nav.Link  href="/films">Films</Nav.Link>
+            <NavDropdown class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" href="/categories" title="Catégories" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="">Action</NavDropdown.Item>
+              <NavDropdown.Item href="">Aventure</NavDropdown.Item>
+              <NavDropdown.Item href="">Anime</NavDropdown.Item>
+              <NavDropdown.Item href="">Comédie</NavDropdown.Item>
+              <NavDropdown.Item href="">Crime</NavDropdown.Item>
+              <NavDropdown.Item href="">Documentaire</NavDropdown.Item>
+              <NavDropdown.Item href="">Drama</NavDropdown.Item>
+              <NavDropdown.Item href="">Famille</NavDropdown.Item>
+              <NavDropdown.Item href="">Fantasie</NavDropdown.Item>
+              <NavDropdown.Item href="">Histoire</NavDropdown.Item>
+              <NavDropdown.Item href="">Horror</NavDropdown.Item>
+              <NavDropdown.Item href="">Musical</NavDropdown.Item>
+              <NavDropdown.Item href="">Mystere</NavDropdown.Item>
+              <NavDropdown.Item href="">Romance</NavDropdown.Item>
+              <NavDropdown.Item href="">Science Fiction</NavDropdown.Item>
+              <NavDropdown.Item href="">Film TV</NavDropdown.Item>
+              <NavDropdown.Item href="">Thiller</NavDropdown.Item>
+              <NavDropdown.Item href="">Guerre</NavDropdown.Item>
+              <NavDropdown.Item href="">Western</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Form className="d-flex" id="search_block">

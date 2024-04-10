@@ -7,7 +7,7 @@ import CategoriesPage from "./Pages/CategoriesPage";
 import DetailsPage from "./Pages/DetailsPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar';
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
   return <>

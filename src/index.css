@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: rgb(0, 0, 0) !important; */
 }
 
 code {
@@ -24,6 +25,7 @@ code {
   padding-top: 10px;
   padding-bottom: 10px !important;
   background-color: rgba(48, 27, 63, .4) !important ;
+  
 }
 
 #search_block{
@@ -38,6 +40,10 @@ code {
   background-color: rgb(48, 27, 63);
   border: none;
   color: white;
+}
+
+#navbar_text{
+  color: white !important;
 }
 
 #search_button:hover{

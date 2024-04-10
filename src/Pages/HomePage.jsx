@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
 import FilmsCard from "../Components/FilmsCard";
 import homeService from "../Services/homeService";
+import {Carousel} from "react-responsive-carousel";
 
 
 const HomePage = () =>{
@@ -17,28 +18,25 @@ const HomePage = () =>{
     }
   }
 
+  // const onChange=() => {
+
+  // }
+
   useEffect (() => {
     fetchPopular()
   },[]);
 
-//   var React = require('react');
-//   var ReactDOM = require('react-dom');
-//   var Carousel = require('react-responsive-carousel').Carousel;
 
-//   var DemoCarousel = React.createClass({
-//     render() {
-//         return (
-//             <Carousel showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
-//               <div id="film_card">
-//                 {movies.map(m =>{
-//                     return <FilmsCard film={m}/>
-//                 })}
-//                 </div>
-//             </Carousel>
-//         );
-//     }
-// });
-// ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
+    return (
+            <Carousel showArrows={true} >
+              {/* <div id="film_card"> */}
+                {movies.map(m =>{
+                    return <FilmsCard film={m}/>
+                })}
+                {/* </div> */}
+            </Carousel>
+        );
+
 }
 
 export default HomePage;
