@@ -13,7 +13,7 @@ const FilmsCard = ({film})=> {
     return <>
     
     <div>
-        <Card style={{width:"18rem"}}>
+        <Card style={{width:"20rem"}} id="card_film">
             <Card.Img variant="top" src={"https://image.tmdb.org/t/p/w300"+film.poster_path} />
             <Card.Body>
                 <Card.Title className='text-center'>{film.title}</Card.Title>

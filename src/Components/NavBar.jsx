@@ -24,9 +24,9 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/home">Accueil</Nav.Link>
-            <Nav.Link  href="/films">Films</Nav.Link>
-            <NavDropdown class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" href="/categories" title="Catégories" id="navbarScrollingDropdown">
+            <Nav.Link id="text_navbar" href="/home">Accueil</Nav.Link>
+            <Nav.Link  id="text_navbar" href="/films">Films</Nav.Link>
+            <NavDropdown id="text_navbar" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" href="/categories" title="Catégories" >
               <NavDropdown.Item href="">Action</NavDropdown.Item>
               <NavDropdown.Item href="">Aventure</NavDropdown.Item>
               <NavDropdown.Item href="">Anime</NavDropdown.Item>

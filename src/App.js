@@ -8,11 +8,11 @@ import DetailsPage from "./Pages/DetailsPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Footer from "./Components/Footer";
 
 function App() {
   return <>
     <BrowserRouter>
-      <NavBar/>
       <div className='p-5'></div>
         <Routes>
           <Route path="/home" element={<HomePage/>} />
