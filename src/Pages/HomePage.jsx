@@ -7,6 +7,8 @@ import {Carousel} from "react-responsive-carousel";
 
 const HomePage = () =>{
   const [movies, setMovies] =useState([]);
+  const [upcoming, setUpcoming] =useState([]);
+  const [topRated, setTopRated] =useState([]);
 
   const fetchPopular = async () => {
     try {
@@ -16,12 +18,34 @@ const HomePage = () =>{
     } catch (e) {
       console.log(e)
     }
-  }
+ }
 
+    const fetchUpcoming = async () => {
+      try {
+        const response = await homeService.getUpcoming();
+        console.log(response);
+        setUpcoming(response.data.results)
+      } catch (e) {
+        console.log(e)
+      }
+    }
+
+    const fetchTopRated = async () => {
+      try {
+        const response = await homeService.getTopRated();
+        console.log(response);
+        setTopRated(response.data.results)
+      } catch (e) {
+        console.log(e);
+      }
+    }
+  
   const displayCount = 5;
 
   useEffect (() => {
     fetchPopular()
+    fetchUpcoming()
+    fetchTopRated();
   },[]);
 
 
@@ -33,21 +57,17 @@ const HomePage = () =>{
             return <FilmsCard film={m} />;
             })}
         </Carousel>
-      <h3 className="titre_des_carousel">Les Nouveautés</h3>
+      <h3 className="titre_des_carousel">A venir</h3>
       <Carousel showArrows={true} centerMode centerSlidePercentage={100 / displayCount} id="carousel_popular_film">
-          {/* <div id="film_card"> */}
-          {movies.map(m => {
+          {upcoming?.map(m => {
             return <FilmsCard film={m} />;
           })}
-          {/* </div> */}
         </Carousel>
         <h3 className="titre_des_carousel">Mieux Notés</h3>
         <Carousel showArrows={true} centerMode centerSlidePercentage={100 / displayCount} id="carousel_popular_film">
-          {/* <div id="film_card"> */}
-          {movies.map(m => {
+          {topRated?.map(m => {
             return <FilmsCard film={m} />;
           })}
-          {/* </div> */}
         </Carousel>
 
 
