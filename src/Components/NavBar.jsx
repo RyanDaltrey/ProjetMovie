@@ -11,7 +11,7 @@ function NavScrollExample() {
     <>
 
     <header id="header_hub_cinema">
-  <img src={require("../Assets/logo_hub_cinema.png")} alt="logo_hub_cinema" id="logo_hub_cinema"/>
+  <img src={require("../Assets/images/logo_hub_cinema.png")} alt="logo_hub_cinema" id="logo_hub_cinema"/>
   </header>
 
     <Navbar expand="lg" className="bg-body-tertiary px-3 rounded-pill col-11" id="navbar_block">
