@@ -9,17 +9,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Footer from "./Components/Footer";
+import { Container } from 'react-bootstrap';
 
 function App() {
   return <>
     <BrowserRouter>
+    <NavBar />
       <div className='p-5'></div>
+      <Container>
         <Routes>
           <Route path="/home" element={<HomePage/>} />
           <Route path="/films" element={<FilmsPage />} />
           <Route path="/categories" element={<CategoriesPage/>} />
           <Route path="/details" element={<DetailsPage />} />
         </Routes>
+        </Container>
+        <Footer />
     </BrowserRouter>
   </>;
 }
